@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14111c">
+  <meta name="description" content="KinoBuddy – niemand geht gern alleine ins Kino. Finde Leute mit deinem Filmgeschmack und geht zusammen.">
+  <title>KinoBuddy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar" hidden>
+    <a href="#/entdecken" class="brand"><span class="brand-icon">🍿</span> KinoBuddy</a>
+    <nav class="nav" id="nav">
+      <a href="#/entdecken" data-nav="entdecken"><span>🧭</span><b>Entdecken</b></a>
+      <a href="#/filme" data-nav="filme"><span>🎬</span><b>Filme</b></a>
+      <a href="#/treffen" data-nav="treffen"><span>🎟️</span><b>Kinotreffen</b></a>
+      <a href="#/kontakte" data-nav="kontakte"><span>💬</span><b>Kontakte</b><i class="badge" id="badge" hidden></i></a>
+      <a href="#/profil" data-nav="profil"><span>👤</span><b>Profil</b></a>
+    </nav>
+  </header>
+  <main id="app" class="container" aria-live="polite"></main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
